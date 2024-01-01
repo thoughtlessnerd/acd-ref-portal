@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap");
+
+:root {
+  --clr-primary: #11122b;
+  --clr-lt-primary: #2b2c3e;
+  --clr-accent: #5f67f0;
+  --clr-white: #f2f2f2;
+  --clr-gray: #717171;
+  --clr-lt-gray: #cacaca;
+  --clr-green: #5aa762;
+  --clr-red: #db4b53;
+
+  /* codeforces ranks colors */
+  --clr-newbie: gray;
+  --clr-pupil: green;
+  --clr-specialist: cyan;
+  --clr-expert: blue;
+  --clr-candidate-master: violet;
+  --clr-master: orange;
+  --clr-international-master: orange;
+  --clr-grandmaster: red;
+  --clr-international-grandmaster: red;
+  --clr-legendary-grandmaster: red;
+
+  --thin: 100;
+  --lt: 300;
+  --md: 500;
+  --bd: 700;
+  --blk: 900;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--clr-primary);
 }
